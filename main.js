@@ -105,3 +105,13 @@ console.log("Vida:", jugador.vida);
 console.log("Energía:", jugador.energia);
 console.log("Nivel:", jugador.nivel);
 console.log("Inventario:", jugador.inventario);
+const jugador2 = {
+  nombre: "Kai",
+  nivel: 1,
+  monedas: 0
+};
+
+jugador2.nivel += 1;
+jugador2.monedas += 50;
+
+console.log(jugador2);
