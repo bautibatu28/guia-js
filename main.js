@@ -178,15 +178,16 @@ const vidaTotal = personajes.reduce((acumulador, personaje) => {
 
 console.log(vidaTotal);
 
+// 23. Mostrar mensaje en pantalla
 mensaje.textContent = "Bienvenido a la guía de JavaScript";
 mensaje.style.color = "blue";
 
+// 24. Botón que suma puntos
 let puntos = 0;
-
+// 25. Validar nombre de usuario
 boton.addEventListener("click", function () {
   const valor = input.value;
 
-  // validar nombre
   if (valor.trim() === "") {
     mensaje.textContent = "Ingresá un nombre para continuar";
     return;
@@ -194,22 +195,19 @@ boton.addEventListener("click", function () {
 
   const numero = Number(valor);
 
-  // sumar puntos
   if (!isNaN(numero) && valor !== "") {
     puntos += numero + 10;
   } else {
     puntos += 10;
   }
 
-  // mostrar puntos
   mensaje.textContent = "Puntos: " + puntos;
 
-  // guardar en localStorage
+ // 26. Guardar puntaje en LocalStorage
   localStorage.setItem("jugador", JSON.stringify({
     nombre: valor,
     puntaje: puntos
   }));
 
-  // mostrar en consola
   console.log(JSON.parse(localStorage.getItem("jugador")));
 });
