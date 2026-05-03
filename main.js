@@ -12,3 +12,10 @@ let penalizacion = 20;
 
 let puntajeTotal = puntosBase + bonus - penalizacion;
 console.log("Puntaje total:", puntajeTotal);
+let edad = 12; 
+
+if (edad >= 13) {
+  console.log("Puede jugar");
+} else {
+  console.log("No puede jugar todavía");
+}
