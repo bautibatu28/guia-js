@@ -195,3 +195,41 @@ const vidaTotal = personajes.reduce((acumulador, personaje) => {
 }, 0);
 
 console.log(vidaTotal);
+
+
+mensaje.textContent = "Bienvenido a la guía de JavaScript";
+mensaje.style.color = "blue";
+
+let puntos = 0;
+
+boton.addEventListener("click", function () {
+  const valor = input.value;
+
+  // validar nombre
+  if (valor.trim() === "") {
+    mensaje.textContent = "Ingresá un nombre para continuar";
+    return;
+  }
+
+  const numero = Number(valor);
+
+  // sumar puntos
+  if (!isNaN(numero) && valor !== "") {
+    puntos += numero + 10;
+  } else {
+    puntos += 10;
+  }
+
+  // mostrar puntos
+  mensaje.textContent = "Puntos: " + puntos;
+
+  // guardar en localStorage
+  localStorage.setItem("jugador", JSON.stringify({
+    nombre: valor,
+    puntaje: puntos
+  }));
+
+  // mostrar en consola
+  console.log(JSON.parse(localStorage.getItem("jugador")));
+});
+
