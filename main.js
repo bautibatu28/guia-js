@@ -10,6 +10,19 @@ let puntosBase = 100;
 let bonus = 50;
 let penalizacion = 20;
 
+const input = document.getElementById("dato");
+const boton = document.getElementById("btn");
+const mensaje = document.getElementById("mensaje");
+
+boton.addEventListener("click", function () {
+  const valor = input.value;
+
+  const numero = Number(valor);
+  const resultado = numero + 10;
+
+  mensaje.textContent = "Resultado: " + resultado;
+});
+
 let puntajeTotal = puntosBase + bonus - penalizacion;
 console.log("Puntaje total:", puntajeTotal);
 edad = 12; 
