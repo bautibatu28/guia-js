@@ -76,3 +76,8 @@ if (inventario.includes("llave")) {
 } else {
   console.log("Necesitás una llave");
 }
+function saludarUsuario(nombre) {
+  console.log("Bienvenido/a, " + nombre);
+}
+saludarUsuario("Luna");
+saludarUsuario("Kai");
