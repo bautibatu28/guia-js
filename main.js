@@ -32,3 +32,8 @@ if (vida > 70) {
 } else {
   console.log("Error: vida inválida");
 }
+for (let i = 3; i >= 1; i--) {
+  console.log(i);
+}
+
+console.log("¡Comienza!");
