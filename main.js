@@ -92,3 +92,16 @@ const sumar = (a, b) => {
 };
 
 console.log(sumar(10, 5));
+const jugador = {
+  nombre: "Luna",
+  vida: 100,
+  energia: 80,
+  nivel: 1,
+  inventario: ["espada", "poción"]
+};
+
+console.log("Nombre:", jugador.nombre);
+console.log("Vida:", jugador.vida);
+console.log("Energía:", jugador.energia);
+console.log("Nivel:", jugador.nivel);
+console.log("Inventario:", jugador.inventario);
