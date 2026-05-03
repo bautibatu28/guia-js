@@ -180,3 +180,18 @@ console.log(vidaTotal);
 
 mensaje.textContent = "Bienvenido a la guía de JavaScript";
 mensaje.style.color = "blue";
+
+let puntos = 0;
+
+boton.addEventListener("click", function () {
+  const valor = input.value;
+
+  if (valor !== "") {
+    const numero = Number(valor);
+    puntos += numero + 10;
+  } else {
+    puntos += 10;
+  }
+
+  mensaje.textContent = "Puntos: " + puntos;
+});
