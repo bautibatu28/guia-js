@@ -45,15 +45,11 @@ if (vida > 70) {
 } else {
   console.log("Error: vida inválida");
 }
-for (let i = 3; i >= 1; i--) {
-  console.log(i);
-}
-
 let opcion = "iniciar";
 
 switch (opcion) {
   case "iniciar":
-    console.log("El juego ha comenzado");
+    console.log("Iniciando juego...");
     break;
 
   case "configuracion":
@@ -70,6 +66,10 @@ switch (opcion) {
 
   default:
     console.log("Opción inválida");
+}
+
+for (let i = 3; i >= 1; i--) {
+  console.log(i);
 }
 
 console.log("¡Comienza!");
