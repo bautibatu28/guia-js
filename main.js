@@ -195,3 +195,13 @@ boton.addEventListener("click", function () {
 
   mensaje.textContent = "Puntos: " + puntos;
 });
+
+boton.addEventListener("click", function () {
+  const nombre = input.value;
+
+  if (nombre.trim() === "") {
+    mensaje.textContent = "Ingresá un nombre para continuar";
+  } else {
+    mensaje.textContent = "Bienvenido/a, " + nombre;
+  }
+});
