@@ -87,3 +87,8 @@ function calcularVidaRestante(vida, danio) {
 
 let resultado = calcularVidaRestante(100, 30);
 console.log(resultado);
+const sumar = (a, b) => {
+  return a + b;
+};
+
+console.log(sumar(10, 5));
