@@ -120,3 +120,8 @@ for (let i = 0; i < personajes.length; i++) {
 
   console.log(`${p.nombre} es ${p.tipo} y está en nivel ${p.nivel}`);
 }
+const personajesFuertes = personajes.filter((personaje) => {
+  return personaje.nivel >= 3;
+});
+
+console.log(personajesFuertes);
