@@ -120,7 +120,8 @@ for (let i = 0; i < personajes.length; i++) {
 
   console.log(`${p.nombre} es ${p.tipo} y está en nivel ${p.nivel}`);
 }
-const personajesFuertes = personajes.filter((personaje) => {
+const personajesFuertes = personajes.filter((
+  personaje) => {
   return personaje.nivel >= 3;
 });
 
@@ -135,3 +136,8 @@ const personajeEncontrado = personajes.find((personaje) => {
 });
 
 console.log(personajeEncontrado);
+const vidaTotal = personajes.reduce((acumulador, personaje) => {
+  return acumulador + personaje.vida;
+}, 0);
+
+console.log(vidaTotal);
