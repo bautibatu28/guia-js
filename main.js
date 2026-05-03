@@ -57,3 +57,15 @@ console.log("Cantidad de objetos:", inventario.length);
 for (let i = 0; i < inventario.length; i++) {
   console.log(inventario[i]);
 }
+let mochila = [];
+
+
+mochila.push("linterna");
+mochila.push("comida");
+mochila.push("mapa");
+
+
+mochila.pop();
+
+
+console.log(mochila);
