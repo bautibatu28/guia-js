@@ -186,22 +186,30 @@ let puntos = 0;
 boton.addEventListener("click", function () {
   const valor = input.value;
 
-  if (valor !== "") {
-    const numero = Number(valor);
+  // validar nombre
+  if (valor.trim() === "") {
+    mensaje.textContent = "Ingresá un nombre para continuar";
+    return;
+  }
+
+  const numero = Number(valor);
+
+  // sumar puntos
+  if (!isNaN(numero) && valor !== "") {
     puntos += numero + 10;
   } else {
     puntos += 10;
   }
 
+  // mostrar puntos
   mensaje.textContent = "Puntos: " + puntos;
-});
 
-boton.addEventListener("click", function () {
-  const nombre = input.value;
+  // guardar en localStorage
+  localStorage.setItem("jugador", JSON.stringify({
+    nombre: valor,
+    puntaje: puntos
+  }));
 
-  if (nombre.trim() === "") {
-    mensaje.textContent = "Ingresá un nombre para continuar";
-  } else {
-    mensaje.textContent = "Bienvenido/a, " + nombre;
-  }
+  // mostrar en consola
+  console.log(JSON.parse(localStorage.getItem("jugador")));
 });
