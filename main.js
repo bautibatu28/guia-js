@@ -49,6 +49,29 @@ for (let i = 3; i >= 1; i--) {
   console.log(i);
 }
 
+let opcion = "iniciar";
+
+switch (opcion) {
+  case "iniciar":
+    console.log("El juego ha comenzado");
+    break;
+
+  case "configuracion":
+    console.log("Abriendo configuración");
+    break;
+
+  case "creditos":
+    console.log("Mostrando créditos");
+    break;
+
+  case "salir":
+    console.log("Saliendo del juego");
+    break;
+
+  default:
+    console.log("Opción inválida");
+}
+
 console.log("¡Comienza!");
 puntajeTotal = 0;
 
