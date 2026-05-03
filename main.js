@@ -44,3 +44,13 @@ for (let ronda = 1; ronda <= 5; ronda++) {
 }
 
 console.log(puntajeTotal);
+const inventario = ["espada", "poción", "llave", "escudo", "mapa"];
+
+// primer objeto
+console.log("Primer objeto:", inventario[0]);
+
+// último objeto
+console.log("Último objeto:", inventario[inventario.length - 1]);
+
+// cantidad total
+console.log("Cantidad de objetos:", inventario.length);
