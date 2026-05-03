@@ -130,3 +130,8 @@ const nombres = personajes.map((personaje) => {
 });
 
 console.log(nombres);
+const personajeEncontrado = personajes.find((personaje) => {
+  return personaje.nombre === "Kai";
+});
+
+console.log(personajeEncontrado);
