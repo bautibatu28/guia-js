@@ -125,3 +125,8 @@ const personajesFuertes = personajes.filter((personaje) => {
 });
 
 console.log(personajesFuertes);
+const nombres = personajes.map((personaje) => {
+  return personaje.nombre;
+});
+
+console.log(nombres);
