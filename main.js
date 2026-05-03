@@ -115,3 +115,8 @@ jugador2.nivel += 1;
 jugador2.monedas += 50;
 
 console.log(jugador2);
+for (let i = 0; i < personajes.length; i++) {
+  const p = personajes[i];
+
+  console.log(`${p.nombre} es ${p.tipo} y está en nivel ${p.nivel}`);
+}
