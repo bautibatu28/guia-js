@@ -37,7 +37,7 @@ for (let i = 3; i >= 1; i--) {
 }
 
 console.log("¡Comienza!");
-let puntajeTotal = 0;
+puntajeTotal = 0;
 
 for (let ronda = 1; ronda <= 5; ronda++) {
   puntajeTotal += 10; // suma 10 en cada ronda
