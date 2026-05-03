@@ -177,3 +177,6 @@ const vidaTotal = personajes.reduce((acumulador, personaje) => {
 }, 0);
 
 console.log(vidaTotal);
+
+mensaje.textContent = "Bienvenido a la guía de JavaScript";
+mensaje.style.color = "blue";
