@@ -69,3 +69,10 @@ mochila.pop();
 
 
 console.log(mochila);
+const objetos = ["espada", "poción", "llave", "escudo"];
+
+if (inventario.includes("llave")) {
+  console.log("La puerta se abre");
+} else {
+  console.log("Necesitás una llave");
+}
